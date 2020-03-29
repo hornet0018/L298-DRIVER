@@ -47,14 +47,14 @@
       (place J3 177419 -77724 front 90 (PN +5V))
     )
     (component 1N4007:DIOM5327X242N
-      (place D8 161636 -64033.4 front 0 (PN D_ALT))
-      (place D7 140122 -67310 front 0 (PN D_ALT))
-      (place D6 161630 -57658 front 0 (PN D_ALT))
-      (place D5 140040 -64008 front 0 (PN D_ALT))
-      (place D4 161630 -60960 front 0 (PN D_ALT))
-      (place D3 140040 -60706 front 0 (PN D_ALT))
-      (place D2 161610 -67005.2 front 0 (PN D_ALT))
-      (place D1 140040 -57404 front 0 (PN D_ALT))
+      (place D8 144612 -68072 front 180 (PN D_ALT))
+      (place D7 155616 -68072 front 180 (PN D_ALT))
+      (place D6 144612 -64516 front 180 (PN D_ALT))
+      (place D5 155534 -64516 front 180 (PN D_ALT))
+      (place D4 144612 -60960 front 180 (PN D_ALT))
+      (place D3 155534 -60960 front 180 (PN D_ALT))
+      (place D2 144612 -57404 front 180 (PN D_ALT))
+      (place D1 155534 -57404 front 180 (PN D_ALT))
     )
     (component "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal"
       (place J4 174498 -56286.4 front 90 (PN +BATT))
@@ -66,13 +66,13 @@
       (place H1 180086 -83820 front 0 (PN MountingHole))
     )
     (component Capacitor_SMD:C_Elec_8x10.2
-      (place C1 151594 -61468 front 180 (PN C_Small))
+      (place C1 166370 -50844 front 90 (PN C_Small))
     )
     (component promicro:adino
       (place U2 148971 -79756 front 270 (PN adino2))
     )
     (component "digikey-footprints:Multiwatt-15"
-      (place U1 142500 -54102 front 0 (PN L298N))
+      (place U1 140970 -54102 front 0 (PN L298N))
     )
   )
   (library
@@ -589,11 +589,10 @@
     (net /SCL
       (pins J6-2 U2-28)
     )
-    (class kicad_default "" +5V /EN_A /EN_B /IN1 /IN2 /IN3 /IN4 /OUT1 /OUT2
-      /OUT3 /OUT4 /PWM_A /PWM_B /RX /SCL /SDA /TX GND "Net-(U2-Pad1)" "Net-(U2-Pad10)"
-      "Net-(U2-Pad15)" "Net-(U2-Pad18)" "Net-(U2-Pad19)" "Net-(U2-Pad21)"
-      "Net-(U2-Pad25)" "Net-(U2-Pad26)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad6)"
-      "Net-(U2-Pad9)"
+    (class kicad_default "" +5V /EN_A /EN_B /IN1 /IN2 /IN3 /IN4 /PWM_A /PWM_B
+      /RX /SCL /SDA /TX GND "Net-(U2-Pad1)" "Net-(U2-Pad10)" "Net-(U2-Pad15)"
+      "Net-(U2-Pad18)" "Net-(U2-Pad19)" "Net-(U2-Pad21)" "Net-(U2-Pad25)"
+      "Net-(U2-Pad26)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad6)" "Net-(U2-Pad9)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -608,6 +607,15 @@
       )
       (rule
         (width 3000)
+        (clearance 200.1)
+      )
+    )
+    (class MOT /OUT1 /OUT2 /OUT3 /OUT4
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 1000)
         (clearance 200.1)
       )
     )

@@ -1,4 +1,4 @@
-update=2020/03/16 0:17:46
+update=2020/03/29 23:18:04
 version=1
 last_client=kicad
 [general]
@@ -240,6 +240,17 @@ dPairViaGap=0.25
 Name=BATT
 Clearance=0.2
 TrackWidth=3
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=MOT
+Clearance=0.2
+TrackWidth=1
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
