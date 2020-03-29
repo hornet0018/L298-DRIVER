@@ -1,0 +1,224 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Conn_01x02_Male
+#
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+X Pin_1 1 200 0 150 L 50 50 1 1 P
+X Pin_2 2 200 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x04_Male
+#
+DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 34 -195 0 -205 1 1 6 F
+S 34 -95 0 -105 1 1 6 F
+S 34 5 0 -5 1 1 6 F
+S 34 105 0 95 1 1 6 F
+P 2 1 1 6 50 -200 34 -200 N
+P 2 1 1 6 50 -100 34 -100 N
+P 2 1 1 6 50 0 34 0 N
+P 2 1 1 6 50 100 34 100 N
+X Pin_1 1 200 100 150 L 50 50 1 1 P
+X Pin_2 2 200 0 150 L 50 50 1 1 P
+X Pin_3 3 200 -100 150 L 50 50 1 1 P
+X Pin_4 4 200 -200 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_ALT
+#
+DEF Device_D_ALT D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_ALT" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 50 50 50 -50 -50 0 50 50 F
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# adino2_adino2
+#
+DEF adino2_adino2 U 0 40 Y Y 1 F N
+F0 "U" -50 0 50 V V C CNN
+F1 "adino2_adino2" -50 0 50 V V C CNN
+F2 "promicro:adino" -50 0 50 V V C CNN
+F3 "" -50 0 50 V I C CNN
+DRAW
+S -300 700 250 -700 1 1 0 N
+X RESET 1 -400 650 100 R 50 50 1 1 I
+X ~ 10 -400 -250 100 R 50 50 1 1 I
+X D5 11 -400 -350 100 R 50 50 1 1 I
+X D6 12 -400 -450 100 R 50 50 1 1 I
+X D7 13 -400 -550 100 R 50 50 1 1 I
+X D8 14 -400 -650 100 R 50 50 1 1 I
+X D9 15 350 -650 100 L 50 50 1 1 I
+X D10 16 350 -550 100 L 50 50 1 1 I
+X D11 17 350 -450 100 L 50 50 1 1 I
+X D12 18 350 -350 100 L 50 50 1 1 I
+X D13 19 350 -250 100 L 50 50 1 1 I
+X RX 2 -400 550 100 R 50 50 1 1 I
+X AVCC 20 350 -150 100 L 50 50 1 1 I
+X AREF 21 350 -50 100 L 50 50 1 1 I
+X GND 22 350 50 100 L 50 50 1 1 I
+X A0 23 350 150 100 L 50 50 1 1 I
+X A1 24 350 250 100 L 50 50 1 1 I
+X A2 25 350 350 100 L 50 50 1 1 I
+X A3 26 350 450 100 L 50 50 1 1 I
+X A4 27 350 550 100 L 50 50 1 1 I
+X A5 28 350 650 100 L 50 50 1 1 I
+X TX 3 -400 450 100 R 50 50 1 1 I
+X D2 4 -400 350 100 R 50 50 1 1 I
+X D3 5 -400 250 100 R 50 50 1 1 I
+X D4 6 -400 150 100 R 50 50 1 1 I
+X VCC 7 -400 50 100 R 50 50 1 1 I
+X GND 8 -400 -50 100 R 50 50 1 1 I
+X ~ 9 -400 -150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Full-Half-Bridge-Drivers_L298N
+#
+DEF dk_PMIC-Full-Half-Bridge-Drivers_L298N U 0 20 Y Y 1 F N
+F0 "U" -200 350 60 H V C CNN
+F1 "dk_PMIC-Full-Half-Bridge-Drivers_L298N" -100 450 60 H V R CNN
+F2 "digikey-footprints:Multiwatt-15" 200 200 60 H I L CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/82/cc/3f/39/0a/29/4d/f0/CD00000240.pdf/files/CD00000240.pdf/jcr:content/translations/en.CD00000240.pdf" 200 300 60 H I L CNN
+F4 "497-1395-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "L298N" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Full, Half-Bridge Drivers" 200 700 60 H I L CNN "Family"
+F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/82/cc/3f/39/0a/29/4d/f0/CD00000240.pdf/files/CD00000240.pdf/jcr:content/translations/en.CD00000240.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/stmicroelectronics/L298N/497-1395-5-ND/585918" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC BRIDGE DRIVER PAR 15MULTIWATT" 200 1000 60 H I L CNN "Description"
+F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 300 200 -600 0 1 0 f
+X CS_A 1 -400 -400 100 R 50 50 1 1 I
+X IN3 10 -400 0 100 R 50 50 1 1 I
+X EN_B 11 -400 -300 100 R 50 50 1 1 I
+X IN4 12 -400 -100 100 R 50 50 1 1 I
+X OUT3 13 300 -200 100 L 50 50 1 1 O
+X OUT4 14 300 -300 100 L 50 50 1 1 O
+X CS_B 15 -400 -500 100 R 50 50 1 1 I
+X OUT1 2 300 0 100 L 50 50 1 1 O
+X OUT2 3 300 -100 100 L 50 50 1 1 O
+X VS 4 0 400 100 D 50 50 1 1 W
+X IN1 5 -400 200 100 R 50 50 1 1 I
+X EN_A 6 -400 -200 100 R 50 50 1 1 I
+X IN2 7 -400 100 100 R 50 50 1 1 I
+X GND 8 0 -700 100 U 50 50 1 1 W
+X VSS 9 100 400 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+BATT
+#
+DEF power_+BATT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+BATT" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
