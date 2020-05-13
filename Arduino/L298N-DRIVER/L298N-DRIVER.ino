@@ -55,7 +55,7 @@ void loop() {
     Serial.println("not_connect_in1");
   } else if (in1 < PWM_MIN) {
     out1 = -1;
-  } else if ((in1 > 1450) && (in1 < 1550)) {
+  } else if ((in1 > 1495) && (in1 < 1505)) {
     out1 = 0;
   } else if (in1 > PWM_MAX) {
     out1 = 1;
@@ -87,14 +87,22 @@ void loop() {
   if (out2 > 0) {
    digitalWrite(MOTOR_R_1, LOW);
     digitalWrite(MOTOR_R_2, HIGH);
-    analogWrite(enB, abs(out1) * 255);
+    analogWrite(enB, abs(out2) * 255);
   } else {
      digitalWrite(MOTOR_R_1, HIGH);
     digitalWrite(MOTOR_R_2, LOW);
-    analogWrite(enB, abs(out1) * 255);
+    analogWrite(enB, abs(out2) * 255);
   }
+  /*
+  Serial.print("out1 :");
   Serial.println(out1);
+  Serial.print("out2 :");
   Serial.println(out2);
+  */
+    Serial.print("in1 :");
+  Serial.println(in1);
+ // Serial.print("in2 :");
+//  Serial.println(in2);
 }
 
 void not_connect() {
